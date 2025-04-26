@@ -104,7 +104,7 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <form id="contact-form">
+                <form action="https://formspree.io/f/xgvkvlky" method="POST">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="Your name">
@@ -121,6 +121,7 @@
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500" placeholder="Your message"></textarea>
                     </div>
+                    <div id="form-status" class="form-status"></div>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
@@ -143,9 +144,6 @@
         </div>
     </footer>
 
-    <!-- Load EmailJS first -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <!-- Then load our custom script -->
     <script src="script.js"></script>
 </body>
 </html> 
